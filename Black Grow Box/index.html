@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="fa" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>جعبه سیاه رشد</title>
+
+<!--------javascript import----------->
+
+<script src="js/vue.dev.js"></script>
+<script src="js/vuetify.min.js"></script>
+
+<!--------css import----------->
+
+<link type="text/css" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link type="text/css" href="https://fonts.googleapis.com/css?family=Material+Icons" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="css/vuetify.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="http://fontweb.ir/css/B Yekan={fontweb.ir}.css"/>
+
+
+ <!-------Fav icons------>
+ 
+ <link rel="shortcut icon" href="bgb-logo-purple.png" >
+
+</head>
+
+<body dir="rtl" >
+
+   <!------Header-------->
+
+ <header id="app-header" >
+
+ <img id="logo" src="img/bgb-logo-white.png"/>
+ <div id="account" >حساب کاربری</div>
+ </header>
+ 
+   <nav id="app-nav">
+   
+   
+
+
+      
+<div id="app-menu" >
+         <ul id="main-menu-list"  dir="rtl" style="font-size:20px; font-family: B Roya,'B Roya',tahoma; " id="nav" class="nav" reversed>
+         
+                      
+            <li><a >داشبورد</a></li>
+	         <li><a >فروشگاه</a></li>
+            <li><a >آمار</a></li>
+            <ol>
+            <li><a >بازدیدکنندگان</a></li>
+            <li><a >خریداران</a></li>
+            </ol>
+            <li><a >گالری</a></li>
+            <li><a >کارت ویزیت</a></li>
+            <li><a >لیست سفارشات</a></li>
+         </ul> <!-- end #nav -->
+</div>
+</nav>
+
+<div id="stats"  >
+<div class="vl"  style="right:220px; top:10%; height:80%"></div>
+<div class="v2"  style="right:221px; top:10%; height:80%"></div>
+<div id="customer-num">15<h2 id="customer-num-desc">تعداد مشتری:</h2></div>
+
+
+<div class="vl"  style="right:44%; top:10%; height:80%"></div>
+<div class="v2"  style="right:44.1%; top:10%; height:80%"></div>
+<div id="sell-num">20<h2 id="sell-num-desc">تعداد فروش:</h2></div>
+
+<div class="vl"  style="right:65%; top:10%; height:80%"></div>
+<div class="v2"  style="right:65.1%; top:10%; height:80%"></div>
+<div id="support-num">2<h2 id="support-num-desc">تعداد پشتیبانی:</h2></div>
+
+<div id="bgb-fee">4785000<h2 id="bgb-fee-desc">کارمزد بلک گرو باکس:</h2></div>
+
+</div>
+
+<div  class="container" id="demand-form">
+<div id="product-info-form">
+<form dir="rtl">
+  نام محصول:<br>
+  <input type="text" name="product-name">
+  <br>
+  نوع محصول:<br>
+  <input type="text" name="product-type">
+ <br> نام بذر:<br>
+  <input type="text" name="seed-name">
+ <br> آدرس مزرعه:<br>
+  <input type="text" name="farm-address">
+ <br> شماره تماس مستقیم کشاورز:<br>
+  <input type="text" name="farmer-phone">
+<br>  مقدار محصول:<br>
+  <input type="text" name="amount">
+  <br>زمان کشت:<br>
+  <input type="text" name="cropping-time">
+<br>  زمان برداشت:<br>
+  <input type="text" name="harvest-time">
+</form>
+</div>  
+ 
+ 
+ <div id="product-quality-form" class="container" >
+ <form dir="rtl"> 
+  <br>
+  <p>درجه بندی محصول</p>
+  <input type="radio" name="gender" value="male"> صادراتی
+  <input type="radio" name="gender" value="female"> سوپر لوکس
+  <input type="radio" name="gender" value="other"> درجه 1
+ <input type="radio" name="gender" value="other"> درجه 2
+ <input type="radio" name="gender" value="other"> درجه 3
+ <input type="radio" name="gender" value="other"> درهم</input>
+<br/>
+<p>دسته بندی:</p>  
+<br/>
+ <input type="radio" name="gender" value="other"> دارد
+ <input type="radio" name="gender" value="other"> ندارد
+- انتخاب تصویر
+<br/>
+ <input type="text" name="gender" value="other"> درجه 3
+ <input type="button" name="gender" value="other"> درجه 3
+<br/>
+توضیحات و اطلاعات هر چه کامل تر شما کمک شایانی به کارشناسان ما در تعیین هزینه و زمان شما خواهد شد، در صورتی که استعلام شما اطلاعات کافی نداشته باشد کارشناسان با شما تماس خواهند گرفت.
+<br/>
+<input type="button" name="gender" value="other"> ثبت درخواست
+ 
+</form>
+ </div>
+ </div>
+ 
+ <div id="demand-list">
+ <table style="width:100%; text-align:right;" align="right" >
+  <caption>لیست تقاضا</caption>
+  <tr>
+    <th>ردیف</th>
+    <th>درخواست</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>February</td>
+    <td>$50</td>
+  </tr>
+</table>
+ </div>
+ 
+ <div id="insta-view" align="center"  >
+<strong>INSTAGRAM</strong>
+ </div>
+ 
+ <div id="twit-view" align="center" >
+ <strong >TWITTER</strong>
+ </div>
+ 
+ <div id="gallery">
+ 
+ 
+ <div id="img1"><div id="img1-desc"></div></div>
+<div id="img2"></div>
+<div id="img3"></div>
+<div id="img4"></div>
+
+ 
+  </div>
+
+
+<img id="center-logo" src="img/bgb-icon-purple+text.png">
+
+
+<footer id="footer" >
+
+<div id="footer-menu" align="right"  >
+
+
+ <ul  dir="rtl" style=" right:20px;  font-family: B Roya,'B Roya',tahoma; " id="nav" class="nav" reversed>
+         
+                      
+            <a >دسترسی سریع</a>
+            <br/>
+            <br/>
+	         <li><a >فروشگاه</a></li>
+            <li><a  >صفحه اصلی</a></li>
+            
+            <li><a  >وبلاگ</a></li>
+            <li><a  >درباره ما</a></li>
+            
+            <li><a  >خدمات</h1></li>
+            <li><a  >تماس با ما</a></li>
+          
+         </ul>
+         
+
+</div>
+
+<div id="feed" >
+
+</div>
+
+<div id="social" >
+<p id="follow-text" >
+- ما را در شبکه های اجتماعی دنبال کنید
+</p>
+
+
+
+</div>
+
+<div id="footer-desc" > 
+<p id="copyright" align="right" >
+تمامی حقوق این سایت محفوظ می باشد و هرگونه کپی برداری از طرح قالب پیگرد قانونی به همراه دارد.
+
+
+
+<p id="powered-by">
+<img width="50px" height="50px" src="img/iot-blockchain-logo.png">
+قدرت گرفته از اینترنت اشیا و زنجیره بلوکی
+
+</p>
+</p>
+</div>
+</footer>
+
+<script src="js/black-grow-box.vue"></script>
+
+
+</body>
+</html>
