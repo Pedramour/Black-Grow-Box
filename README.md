@@ -1,6 +1,6 @@
 # Black-Grow-Box
 ============================
-powered by Black Grow Box team
+powered by Black Grow Box Team
 ======================================
-Designer Website : http://www.pedramahmadi.com/
+Website : https://blackgrowbox.com/
 ====================================================
