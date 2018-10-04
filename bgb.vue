@@ -1,21 +1,4 @@
-<script>
-// Libraries
-import Vue from 'vue'
-import Vuetify from 'vuetify'
 
-// Helpers
-import colors from 'vuetify/es5/util/colors'
-
-Vue.use(Vuetify, {
-  theme: {
-    primary: colors.pink.accent3, // #E53935
-    secondary: colors.grey.darken3, // #FFCDD2
-    accent: colors.grey.darken4 // #3F51B5
-  }
-});
-
-
-</script>
 <script>
 
 
