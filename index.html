@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>مزرعه درون جعبه سیاه</title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
-    <link href="https://fonts.googleapis.com/css?family=Material+Icons" rel="stylesheet">
-    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
-    <link rel="shortcut icon" href="bgb-logo-white.png" >
 
-    <style>
-        .v_float{
+<head>
+  <meta charset="UTF-8">
+  <title>مزرعه درون جعبه سیاه</title>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+  <link rel="shortcut icon" href="bgb-logo-white.png">
+  <style>
+    .v_float{
             float: left;
         }
         
@@ -78,574 +78,449 @@
     </style>
 
 </head>
+
 <body>
+  <div id="app"> </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script>
 
-<div id="app" >
-    <v-app id="inspire" dark >
-    <p class="text-xs-right ma-0 pa-0"></p>
-        <v-layout>
-            <v-container
-                    grid-list-lg
-                    style="margin-top: 0px; padding: 0px">
-                <!--Start main layout-->
-                <v-layout row wrap>
-                    <v-flex xs8 sm8 md8 lg8 style="text-sm-left">
-                        <v-card color="gray" class="white--text">
-                            <div>
-                                <div class="headline">حساب کاربری</div>
-                            </div>
+  <script type="text/x-template" id="app-template">
+  <v-app id="inspire" dark>
+    <v-layout>
+      <v-container grid-list-lg style="margin-top: 0px; padding: 0px">
+        <!--Start main layout-->
+        <v-layout row wrap>
+          <v-flex xs8 sm8 md8 lg8 class="text-sm-left">
+            <v-card class="white--text" color="gray">
+              <div>
+                <div class="headline">حساب کاربری</div>
+              </div>
+            </v-card>
+
+            <v-card class="white--text rtl" color="colors.grey.darken3" style="margin-top: 15px;">
+              <v-layout class="justify-center" row wrap>
+                <v-card class="leftBorder theme--dark">
+                  <v-card-title class="cardContentMargin">
+                    <h3 class="headline">1numbers</h3>
+                  </v-card-title>
+                  <v-card-text>1Numbers</v-card-text>
+                </v-card>
+                <v-card class="leftBorder theme--dark">
+                  <v-card-title class="cardContentMargin">
+                    <h3 class="headline">2numbers</h3>
+                  </v-card-title>
+                  <v-card-text>2Numbers</v-card-text>
+                </v-card>
+                <v-card class="leftBorder theme--dark">
+                  <v-card-title class="cardContentMargin">
+                    <h3 class="headline">3numbers</h3>
+                  </v-card-title>
+                  <v-card-text>3Numbers</v-card-text>
+                </v-card>
+                <v-card class="theme--dark">
+                  <v-btn class="text-sm-left" round color="red" dark style="left: -50%; margin-bottom: 0px">تومان</v-btn>
+                  <v-card-title class="cardContentMargin" style="margin-top: 0px">
+
+                    <h3 class="headline">4numbers</h3>
+                  </v-card-title>
+                  <v-card-text>4Numbers</v-card-text>
+                  <div></div>
+                </v-card>
+              </v-layout>
+            </v-card>
+
+            <v-card class="white--text rtl" color="colors.grey.darken3" style="margin-top: 15px">
+              <v-layout class="justify-right" row wrap>
+                <v-card class="theme--dark" style="margin-right: 1%">
+                  <v-card-text>
+                    <v-card-title class="formCardMargin">
+                      نام محصول:&nbsp;&nbsp;&nbsp;
+
+
+                      <v-text-field label single-line solo-inverted></v-text-field>
+                    </v-card-title>
+                    <v-divider color="white"></v-divider>
+                    <v-card-title class="formCardMargin">
+                      نوع محصول:&nbsp;&nbsp;&nbsp;
+
+
+                      <v-text-field label single-line solo-inverted></v-text-field>
+
+                    </v-card-title>
+                    <v-divider></v-divider>
+                    <v-card-title class="formCardMargin">
+                      نام پدر:&nbsp;&nbsp;&nbsp;
+
+
+                      <v-text-field label single-line solo-inverted></v-text-field>
+                    </v-card-title>
+                    <v-divider></v-divider>
+                    <v-card-title class="formCardMargin">
+                      آدرس مزرعه:&nbsp;&nbsp;&nbsp;
+
+
+                      <v-text-field label single-line solo-inverted></v-text-field>
+                    </v-card-title>
+                    <v-divider></v-divider>
+                    <v-card-title class="formCardMargin">
+                      شماره تماس مستقیم کشاورز:&nbsp;&nbsp;&nbsp;
+
+
+                      <v-text-field label single-line solo-inverted></v-text-field>
+                    </v-card-title>
+                    <v-divider></v-divider>
+                    <v-card-title class="formCardMargin">
+                      مقدار محصول:&nbsp;&nbsp;&nbsp;
+
+
+                      <v-text-field label single-line solo-inverted></v-text-field>
+                    </v-card-title>
+                    <v-divider></v-divider>
+                    <v-card-title class="formCardMargin">
+                      زمان کشت:&nbsp;&nbsp;&nbsp;
+
+
+                      <v-text-field label single-line solo-inverted></v-text-field>
+                    </v-card-title>
+                    <v-divider></v-divider>
+                    <v-card-title class="formCardMargin">
+                      زمان برداشت:&nbsp;&nbsp;&nbsp;
+
+
+                      <v-text-field label single-line solo-inverted></v-text-field>
+                    </v-card-title>
+                    <v-divider></v-divider>
+                  </v-card-text>
+                </v-card>
+                <v-card class="theme--dark white--text ltr" align-space-around justify-start column fill-height style="margin-right: 30px">
+                  <v-form v-model="valid" lg15>
+                    <v-layout class="light--text" align-space-around justify-end column fill-height wrap>
+                      <v-flex xs1 sm2>
+                        <fieldset style="border: solid 1px">
+                          <legend>-درجه بندی محصول:</legend>
+                          <v-flex xs10="">
+                            <v-card class="theme--dark">
+                              <v-card-text>
+
+                                <v-radio class="text-lg-right" :label="`صادراتی:`" v-model="checkbox"></v-radio>
+                                <v-radio class="text-lg-right" :label="`سوپرلوکس:`" v-model="checkbox"></v-radio>
+                                <v-radio class="text-lg-right" :label="`درجه 1:`" v-model="checkbox"></v-radio>
+                                <v-radio class="text-lg-right" :label="`درجه 2:`" v-model="checkbox"></v-radio>
+                                <v-radio class="text-lg-right" :label="`درجه 3:`" v-model="checkbox"></v-radio>
+                                <v-radio class="text-lg-right" :label="`درهم:`" v-model="checkbox"></v-radio>
+
+                                <div></div>
+                              </v-card-text>
+                            </v-card>
+                          </v-flex>
+                        </fieldset>
+
+                        <fieldset class="text-lg-right" style="border: solid 1px">
+                          <legend>-دسته بندی:</legend>
+                          <v-card class="theme--dark">
+                            <v-card-text>
+                              <v-radio class="text-lg-right rtl" :label="`دارد:`" v-model="checkbox"></v-radio>
+                              <v-radio class="text-lg-right" :label="`ندارد:`" v-model="checkbox"></v-radio>
+                              <div></div>
+                            </v-card-text>
+                          </v-card>
+                        </fieldset>
+
+                        <fieldset class="text-lg-right" style="border: solid 1px; margin-right: 10px">
+                          <legend>-انتخاب تصویر:</legend>
+                          <v-card class="theme--dark">
+                            <v-card-text>
+                              <v-text-field data-buttonText="Browser" type="file" :accept="accept" :multiple="false"
+                                :disabled="disabled" ref="fileInput" color="colors.grey.darken3" style=" line-height: 50px; direction: ltr">
+                              </v-text-field>
+                            </v-card-text>
+                          </v-card>
+                        </fieldset>
+                        <div></div>
+                      </v-flex>
+
+                    </v-layout>
+                    <v-card class="indigo lighten-1 white--text text-xs-right rtl" flat tile width="100%">
+                      <v-card-text>
+                        توضیحات و اطلاعات هرچه کامل تر شما کمک شایانی به کارشناسان ما در
+                        تعیین نرخ هزینه و زمان شما خواهد شد.
+                      </v-card-text>
+                      <v-card-text>
+                        در صورتی ک استعلام شما اطلاعات کافی نداشته باشد کارشناسان با شما
+                        تماس خواهند گرفت.
+                      </v-card-text>
+                    </v-card>
+                    <v-flex style="text-lg-right: left; margin:100px 0px 0px 0px; padding: 0px">
+                      <v-card class="white--text text-xs-right" width="100%" color="colors.grey.darken3">
+                        <v-card-text>
+                          <v-btn class="text-xs-right" color="error" style="line-height: 50%">ثبت
+                            درخواست</v-btn>
+                        </v-card-text>
+                      </v-card>
+                    </v-flex>
+                  </v-form>
+                </v-card>
+              </v-layout>
+              <div></div>
+            </v-card>
+
+            <v-card class="black--text" color="grey darken-3 darken-2" style="margin-top: 15px">
+              <v-card-title primary-title="">
+                <v-data-table class="elevation-1 justify-center" v-model="selected" :headers="headers" :items="rowNumber"
+                  :pagination.sync="pagination" select-all item-key="rowNumber" style="width:100%">
+                  <template slot="headers" slot-scope="props">
+                    <tr>
+
+                      <th v-for="header in props.headers" :key="header.text" :class="['column sortable', pagination.descending ? 'desc' : 'asc', header.value === pagination.sortBy ? 'active' : '']"
+                        @click="changeSort(header.value)">
+                        <v-icon small="">arrow_upward</v-icon>
+                        {{ header.text }}
+                      </th>
+                    </tr>
+                  </template>
+                  <template slot="items" slot-scope="props">
+                    <tr :active="props.selected" @click="props.selected = !props.selected">
+
+                      <td class="text-xs-center">
+                        <v-btn color="error" style="margin-right: 4px;">پیگیری</v-btn>
+                        <v-btn color="black">ویرایش</v-btn>
+                      </td>
+                      <td class="text-xs-center">{{ props.item.state }}</td>
+                      <td class="text-xs-center">{{ props.item.date }}</td>
+                      <td class="text-xs-center">{{ props.item.requestTitle }}</td>
+                      <td class="text-xs-center">{{ props.item.rowNumber }}</td>
+                    </tr>
+                  </template>
+                </v-data-table>
+              </v-card-title>
+            </v-card>
+
+            <v-card class="black--text" color="grey darken-3 darken-2" style="margin-top: 15px">
+              <v-tabs v-model="active" color="darkpink" dark slider-color="green" text-color="black">
+                <v-tab v-for="n in 2" :key="n" ripple color="darkpink">
+                  instagram {{ n }}
+
+                </v-tab>
+                <v-tab-item v-for="n in 2" :key="n" justify-center color="darkred">
+                  <v-container class="containerPics" fluid grid-list-sm>
+                    <v-layout>
+                      <v-flex xs3 sm6>
+                        <v-card>
+                          <v-img class="grey darken-4" src="https://picsum.photos/350/165?random" height="125"></v-img>
+                          <v-card-title class="title">height</v-card-title>
                         </v-card>
 
-                        <v-card color="colors.grey.darken3" class="white--text rtl" style="margin-top: 15px;">
-                            <v-layout row wrap class="justify-center">
-                                <v-card class="leftBorder theme--dark">
-                                    <v-card-title class="cardContentMargin">
-                                        <h3 class="headline">1numbers</h3>
-                                    </v-card-title>
-                                    <v-card-text>1Numbers</v-card-text>
-                                </v-card>
-                                <v-card class="leftBorder theme--dark">
-                                    <v-card-title class="cardContentMargin">
-                                        <h3 class="headline">2numbers</h3>
-                                    </v-card-title>
-                                    <v-card-text >2Numbers</v-card-text>
-                                </v-card>
-                                <v-card class="leftBorder theme--dark">
-                                    <v-card-title class="cardContentMargin">
-                                        <h3 class="headline">3numbers</h3>
-                                    </v-card-title>
-                                    <v-card-text>3Numbers</v-card-text>
-                                </v-card>
-                                <v-card class="theme--dark">
-                                    <v-btn round color="red" dark class="text-sm-left" style="left: -50%; margin-bottom: 0px">تومان</v-btn>
-                                    <v-card-title class="cardContentMargin" style="margin-top: 0px" >
+                      </v-flex>
 
-                                        <h3 class="headline">4numbers</h3>
-                                    </v-card-title>
-                                    <v-card-text>4Numbers</v-card-text>
-                                    <div ></div>
-                                </v-card>
-                            </v-layout>
+                      <v-flex xs3 sm5>
+                        <v-card>
+                          <v-img class="grey darken-4" src="https://picsum.photos/350/165?random" height="125"></v-img>
+                          <v-card-title class="title">height</v-card-title>
                         </v-card>
+                      </v-flex>
 
-                        <v-card color="colors.grey.darken3" class="white--text rtl" style="margin-top: 15px">
-                            <v-layout row wrap class="justify-right">
-                                <v-card class="theme--dark" style="margin-right: 1%">
-                                    <v-card-text>
-                                        <v-card-title class="formCardMargin">
-                                            نام محصول:&nbsp;&nbsp;&nbsp;
-                                     
-                                       
-            <v-text-field
-              label=""
-              single-line solo-inverted
-            ></v-text-field>
-                                        </v-card-title>
-                                        <v-divider color="white"></v-divider>
-                                        <v-card-title class="formCardMargin">
-                                            نوع محصول:&nbsp;&nbsp;&nbsp;
-                                     
-                                       
-            <v-text-field
-              label=""
-              single-line solo-inverted
-            ></v-text-field>
-       
-             </v-card-title>
-                                        <v-divider></v-divider>
-                                        <v-card-title class="formCardMargin">
-                                            نام پدر:&nbsp;&nbsp;&nbsp;
-                                     
-                                       
-            <v-text-field
-              label=""
-              single-line solo-inverted
-            ></v-text-field>
-                                        </v-card-title>
-                                        <v-divider></v-divider>
-                                        <v-card-title class="formCardMargin">
-                                            آدرس مزرعه:&nbsp;&nbsp;&nbsp;
-                                     
-                                       
-            <v-text-field
-              label=""
-              single-line solo-inverted
-            ></v-text-field>
-                                        </v-card-title>
-                                        <v-divider></v-divider>
-                                        <v-card-title class="formCardMargin">
-                                            شماره تماس مستقیم کشاورز:&nbsp;&nbsp;&nbsp;
-                                     
-                                       
-            <v-text-field
-              label=""
-              single-line solo-inverted
-            ></v-text-field>
-                                        </v-card-title>
-                                        <v-divider></v-divider>
-                                        <v-card-title class="formCardMargin">
-                                            مقدار محصول:&nbsp;&nbsp;&nbsp;
-                                     
-                                       
-            <v-text-field
-              label=""
-              single-line solo-inverted
-            ></v-text-field>
-                                        </v-card-title>
-                                        <v-divider></v-divider>
-                                        <v-card-title class="formCardMargin">
-                                            زمان کشت:&nbsp;&nbsp;&nbsp;
-                                     
-                                       
-            <v-text-field
-              label=""
-              single-line solo-inverted
-            ></v-text-field>
-                                        </v-card-title>
-                                        <v-divider></v-divider>
-                                        <v-card-title class="formCardMargin">
-                                            زمان برداشت:&nbsp;&nbsp;&nbsp;
-                                     
-                                       
-            <v-text-field
-              label=""
-              single-line solo-inverted
-            ></v-text-field>
-                                        </v-card-title>
-                                        <v-divider></v-divider>
-                                    </v-card-text>
-                                </v-card>
-                                <v-card class="theme--dark white--text ltr" align-space-around justify-start column fill-height style="margin-right: 30px">
-                                    <v-form v-model="valid" lg15>
-                                        <v-layout align-space-around justify-end column fill-height  wrap class="light--text">
-                                            <v-flex xs1 sm2 >
-                                                <fieldset style="border: solid 1px">
-                                                    <legend>-درجه بندی محصول:</legend>
-                                                    <v-flex xs10>
-                                                        <v-card class="theme--dark">
-                                                            <v-card-text>
-     
-                                                                 <v-radio
-                                                                        :label="`صادراتی:`"
-                                                                        v-model="checkbox" class="text-lg-right"
-                                                                ></v-radio>
-                                                                <v-radio
-                                                                        :label="`سوپرلوکس:`"
-                                                                        v-model="checkbox" class="text-lg-right"
-                                                                ></v-radio>
-                                                                <v-radio
-                                                                        :label="`درجه 1:`"
-                                                                        v-model="checkbox" class="text-lg-right"
-                                                                ></v-radio>
-                                                                <v-radio
-                                                                        :label="`درجه 2:`"
-                                                                        v-model="checkbox" class="text-lg-right"
-                                                                ></v-radio>
-                                                                <v-radio
-                                                                        :label="`درجه 3:`"
-                                                                        v-model="checkbox" class="text-lg-right"
-                                                                ></v-radio>
-                                                                <v-radio
-                                                                        :label="`درهم:`"
-                                                                        v-model="checkbox" class="text-lg-right"
-                                                                ></v-radio>
-                                                                
-                                                                <div ></div>
-                                                            </v-card-text>
-                                                        </v-card>
-                                                    </v-flex>
-                                                </fieldset>
-
-                                                <fieldset class="text-lg-right" style="border: solid 1px">
-                                                    <legend>-دسته بندی:</legend>
-                                                    <v-card class="theme--dark">
-                                                        <v-card-text>
-                                                            <v-radio
-                                                                    :label="`دارد:`"
-                                                                    v-model="checkbox" class="text-lg-right rtl"
-                                                            ></v-radio>
-                                                            <v-radio
-                                                                    :label="`ندارد:`"
-                                                                    v-model="checkbox" class="text-lg-right"
-                                                            ></v-radio>
-                                                            <div ></div>
-                                                        </v-card-text>
-                                                    </v-card>
-                                                </fieldset>
-
-                                                <fieldset class="text-lg-right" style="border: solid 1px; margin-right: 10px">
-                                                    <legend>-انتخاب تصویر:</legend>
-                                                    <v-card class="theme--dark">
-                                                        <v-card-text>
-                                                            <v-text-field type="file" :accept="accept" :multiple="false" :disabled="disabled"
-                                                                   ref="fileInput"  data-buttonText="Browser" color="colors.grey.darken3" style=" line-height: 50px; direction: ltr"/>
-                                                        </v-card-text>
-                                                    </v-card>
-                                                </fieldset>
-                                                <div ></div>
-                                            </v-flex>
-
-                                        </v-layout>
-                                            <v-card flat
-                                                    tile
-                                                    class="indigo lighten-1 white--text text-xs-right rtl" width="100%">
-                                                <v-card-text>
-                                                    توضیحات و اطلاعات هرچه کامل تر شما کمک شایانی به کارشناسان ما در تعیین نرخ هزینه و زمان شما خواهد شد.
-                                                </v-card-text>
-                                                <v-card-text>
-                                                در صورتی ک استعلام شما اطلاعات کافی نداشته باشد کارشناسان با شما تماس خواهند گرفت.
-                                                </v-card-text>
-                                            </v-card>
-                                        <v-flex style="text-lg-right: left; margin:100px 0px 0px 0px; padding: 0px">
-                                        <v-card
-                                                class="white--text text-xs-right" width="100%" color="colors.grey.darken3" >
-                                            <v-card-text>
-                                                <v-btn color="error" class="text-xs-right" style="line-height: 50%">ثبت درخواست</v-btn>
-                                            </v-card-text>
-                                        </v-card>
-                                        </v-flex>
-                                    </v-form>
-                                </v-card>
-                            </v-layout>
-                            <div ></div>
+                      <v-flex xs3 sm4>
+                        <v-card>
+                          <v-img class="grey darken-4" src="https://picsum.photos/350/165?random" height="125"></v-img>
+                          <v-card-title class="title">height</v-card-title>
                         </v-card>
-
-                        <v-card color="grey darken-3 darken-2" class="black--text" style="margin-top: 15px">
-                            <v-card-title primary-title>
-                                <v-data-table
-                                        v-model="selected"
-                                        :headers="headers"
-                                        :items="rowNumber"
-                                        :pagination.sync="pagination"
-                                        select-all
-                                        item-key="rowNumber"
-                                        class="elevation-1 justify-center"
-                                        style="width:100%"
-                                >
-                                    <template slot="headers" slot-scope="props">
-                                        <tr>
-
-                                            <th
-                                                    v-for="header in props.headers"
-                                                    :key="header.text"
-                                                    :class="['column sortable', pagination.descending ? 'desc' : 'asc', header.value === pagination.sortBy ? 'active' : '']"
-                                                    @click="changeSort(header.value)"
-                                            >
-                                                <v-icon small>arrow_upward</v-icon>
-                                                {{ header.text }}
-                                            </th>
-                                        </tr>
-                                    </template>
-                                    <template slot="items" slot-scope="props">
-                                        <tr :active="props.selected" @click="props.selected = !props.selected">
-
-                                            <td class="text-xs-center"><v-btn color="error" style="margin-right: 4px;">پیگیری</v-btn><v-btn color="black">ویرایش</v-btn></td>
-                                            <td class="text-xs-center">{{ props.item.state }}</td>
-                                            <td class="text-xs-center">{{ props.item.date }}</td>
-                                            <td class="text-xs-center">{{ props.item.requestTitle }}</td>
-                                            <td class="text-xs-center">{{ props.item.rowNumber }}</td>
-                                        </tr>
-                                    </template>
-                                </v-data-table>
-                            </v-card-title>
+                      </v-flex>
+                      <v-flex xs3 sm6>
+                        <v-card>
+                          <v-img class="grey darken-4" src="https://picsum.photos/350/165?random" height="125"></v-img>
+                          <v-card-title class="title">height</v-card-title>
                         </v-card>
+                      </v-flex>
+                    </v-layout>
+                  </v-container>
+                </v-tab-item>
+              </v-tabs>
+            </v-card>
 
-                        <v-card color="grey darken-3 darken-2" class="black--text" style="margin-top: 15px">
-                                <v-tabs
-                                        v-model="active"
-                                        color="darkpink"
-                                        dark
-                                        slider-color="green"
-                                        text-color="black"
 
-                                >
-                                    <v-tab
-                                            v-for="n in 2"
-                                            :key="n"
-                                            ripple
-                                            color="darkpink"
-                                    >
-                                        instagram {{ n }}
+            <v-layout align-center justify-center row>
 
-                                    </v-tab>
-                                    <v-tab-item
-                                            v-for="n in 2"
-                                            :key="n"
-                                            justify-center
-                                            color="darkred"
-                                    >
-                                        <v-container fluid grid-list-sm class="containerPics">
-                                            <v-layout>
-                                                <v-flex xs3 sm6>
-                                                    <v-card>
-                                                        <v-img
-                                                                src="https://picsum.photos/350/165?random"
-                                                                height="125"
-                                                                class="grey darken-4"
-                                                        ></v-img>
-                                                        <v-card-title class="title">height</v-card-title>
-                                                    </v-card>
 
-                                                </v-flex>
+              <v-flex xs3 sm4>
+                <v-img class="grey darken-4" src="bgb-icon-purple+text.png" height="200" width="300" style="margin-top: 30px">
+                </v-img>
 
-                                                <v-flex xs3 sm5>
-                                                    <v-card>
-                                                        <v-img
-                                                                src="https://picsum.photos/350/165?random"
-                                                                height="125"
-                                                                class="grey darken-4"
-                                                        ></v-img>
-                                                        <v-card-title class="title">height</v-card-title>
-                                                    </v-card>
-                                                </v-flex>
-
-                                                <v-flex xs3 sm4>
-                                                    <v-card>
-                                                        <v-img
-                                                                src="https://picsum.photos/350/165?random"
-                                                                height="125"
-                                                                class="grey darken-4"
-                                                        ></v-img>
-                                                        <v-card-title class="title">height</v-card-title>
-                                                    </v-card>
-                                                </v-flex>
-                                                <v-flex xs3 sm6>
-                                                    <v-card>
-                                                        <v-img
-                                                                src="https://picsum.photos/350/165?random"
-                                                                height="125"
-                                                                class="grey darken-4"
-                                                        ></v-img>
-                                                        <v-card-title class="title">height</v-card-title>
-                                                    </v-card>
-                                                </v-flex>
-                                            </v-layout>
-                                        </v-container>
-                                    </v-tab-item>
-                                </v-tabs>
-                        </v-card>
-                       
-                       
-                        <v-layout align-center justify-center row />
-                        
-                        
-                        <v-flex   xs3 sm4 >
-            <v-img src="bgb-icon-purple+text.png"
-                                                                height="200" width="300"
-                                                                class="grey darken-4" style="margin-top: 30px" >
-                                                                </v-img>
-            
-            </v-flex>
+              </v-flex>
             </v-layout>
-            
-            
-      <v-layout align-space-around row wrap>
-        <v-flex xs10 sm12>
-          <v-card dark  fill-height  >
-           
-            
-            
-            <v-layout align-end justify-start column fill-height style="margin-top: 50px" />
-           
-            <v-flex xs12 sm5 md5 offset-xs0 offset-lg2>
-            
-            <p>دسترسی سریع</p>
-            
-            <v-btn class="rtl ma-3 pa-0" style="text-lg-right: right" flat small><v-icon>navigate_before</v-icon>
-صفحه اصلی</v-btn>
-</v-flex>
 
- <v-flex xs4 xs12 sm5 md5 offset-xs0 offset-lg2>
 
-<v-btn class="rtl ma-2 pa-0" style="text-lg-right: right" flat small><v-icon>navigate_before</v-icon>وبلاگ</v-btn>
+            <v-layout align-space-around row wrap>
+              <v-flex xs10 sm12>
+                <v-card dark fill-height>
 
-</v-flex>
 
- <v-flex xs4 xs12 sm5 md5 offset-xs0 offset-lg2>
 
-<v-btn class="rtl ma-3 pa-0" style="text-lg-right: right" flat small><v-icon>navigate_before</v-icon>درباره ما</v-btn>
+                  <v-layout align-end justify-start column fill-height style="margin-top: 50px">
 
-</v-flex>
+                    <v-flex xs12 sm5 md5 offset-xs0 offset-lg2>
 
- <v-flex xs4 xs12 sm5 md5 offset-xs0 offset-lg2>
+                      <p>دسترسی سریع</p>
 
-<v-btn class="rtl ma-3 pa-0" style="text-lg-right: right" flat small><v-icon>navigate_before</v-icon>خدمات</v-btn>
+                      <v-btn class="rtl ma-3 pa-0" style="text-lg-right: right" flat small>
+                        <v-icon>navigate_before</v-icon>
+                        صفحه اصلی
+                      </v-btn>
+                    </v-flex>
 
-</v-flex>
+                    <v-flex xs4 xs12 sm5 md5 offset-xs0 offset-lg2>
 
- <v-flex xs12 sm5 md5 offset-xs0 offset-lg2>
-
-<v-btn class="rtl ma-3 pa-0" style="text-lg-right: right" flat small><v-icon>navigate_before</v-icon>تماس با ما</v-btn>
-
-</v-flex>
-
-</v-layout>
-        
-        <v-flex xs12 sm6 md3>
-          <v-form v-model="valid">
-     
-      <v-text-field
-        v-model="email"
-        :rules="emailRules"
-        label="E-mail"
-        required
-      ></v-text-field>
-      
-      
-      
-    </v-form>
-  
-  <v-btn>ثبت در خبرنامه</v-btn>
-  <br>
-  <span><i class="fab fa-facebook"></i></span>
-  <span><i class="fab fa-twitter"></i></span>
-  <span><i class="fab fa-instagram"></i></span>
-<span><i class="fab fa-google-plus-g"></i></span>
-<span><i class="fas fa-rss-square"></i></span>
-  
-    </v-flex>
-          <v-footer class="rtl" >
-      <v-card-text>تمامی حقوق این سایت نزد لورم اپسوم محفوظ می باشد و هر گونه کپی برداری از طرح قالب پیگرد قانونی به همراه دارد.</v-card-text>
-      <v-card-text >قدرت گرفته از اینترنت اشیا و زنجیره بلوکی</v-card-text>
-    </v-footer>
-        
-          
-        </v-flex>
-        
-                        <v-layout>
-                    
-                                                    
+                      <v-btn class="rtl ma-2 pa-0" style="text-lg-right: right" flat small>
+                        <v-icon>navigate_before</v-icon>وبلاگ
+                      </v-btn>
 
                     </v-flex>
-                    <v-flex xs4 >
-                        <v-card color="grey darken-3 darken-2" class="black--text rtl">
-                            <v-card-title primary-title>
-                            
-                            
-                            
-                            
-                            
-                            
-                            <v-navigation-drawer
-      clipped
-      absolute
-      dark
-                         justify-end
-      v-model="drawer"
-      app
-    >
-      <v-list dense fill-height >
-        <v-list-tile @click="">
-          <v-list-tile-action>
-            <v-icon>dashboard</v-icon>
-          </v-list-tile-action>
-          <v-list-tile-content>
-            <v-list-tile-title>داشبورد 
-</v-list-tile-title>
-          </v-list-tile-content>
-        </v-list-tile>
-        <v-list-tile @click="">
-          <v-list-tile-action>
-            <i class="material-icons">
-shopping_cart
-</i>
-          </v-list-tile-action>
-          <v-list-tile-content>
-            <v-list-tile-title>فروشگاه</v-list-tile-title>
-          </v-list-tile-content>
-        </v-list-tile>
-        
-        
-        <v-list-tile @click="">
-          <v-list-tile-action>
-            <i class="material-icons">
-equalizer
-</i>
-          </v-list-tile-action>
-          <v-list-tile-content>
-            <v-list-tile-title>آمار</v-list-tile-title>
-          </v-list-tile-content>
-        </v-list-tile>
-        
-        <v-list-tile @click="">
-          <v-list-tile-action>
-            <i class="material-icons">
-photo_library
-</i>
-          </v-list-tile-action>
-          <v-list-tile-content>
-            <v-list-tile-title>گالری</v-list-tile-title>
-          </v-list-tile-content>
-        </v-list-tile>
-        
-        <v-list-tile @click="">
-          <v-list-tile-action>
-            <i class="material-icons">
-credit_card
-</i>
-          </v-list-tile-action>
-          <v-list-tile-content>
-            <v-list-tile-title>کارت ویزیت</v-list-tile-title>
-          </v-list-tile-content>
-        </v-list-tile>
-      </v-list>
-      
-      
-      <v-list-tile @click="">
-          <v-list-tile-action>
-            <i class="material-icons">
-view_list 
-</i>
-          </v-list-tile-action>
-          <v-list-tile-content>
-            <v-list-tile-title>لیست سفارشات</v-list-tile-title>
-          </v-list-tile-content>
-        </v-list-tile>
-      </v-list>
-      
-       
-      
-     
-       
-    </v-navigation-drawer>
-    
-      <v-toolbar-side-icon @click.stop="drawer = !drawer1" > <v-img align-center
-                                                                src="bgb-logo-white.png"
-                                                        ></v-img>
-                                                        
-                                                       
-    </v-toolbar>
-    
-    
-    
-    
-                              
-                            </v-card-title>
-                        </v-card>
+
+                    <v-flex xs4 xs12 sm5 md5 offset-xs0 offset-lg2>
+
+                      <v-btn class="rtl ma-3 pa-0" style="text-lg-right: right" flat small>
+                        <v-icon>navigate_before</v-icon>درباره ما
+                      </v-btn>
+
                     </v-flex>
-                </v-layout>
-            </v-container>
+
+                    <v-flex xs4 xs12 sm5 md5 offset-xs0 offset-lg2>
+
+                      <v-btn class="rtl ma-3 pa-0" style="text-lg-right: right" flat small>
+                        <v-icon>navigate_before</v-icon>خدمات
+                      </v-btn>
+
+                    </v-flex>
+
+                    <v-flex xs12 sm5 md5 offset-xs0 offset-lg2>
+
+                      <v-btn class="rtl ma-3 pa-0" style="text-lg-right: right" flat small>
+                        <v-icon>navigate_before</v-icon>تماس با ما
+                      </v-btn>
+
+                    </v-flex>
+
+                  </v-layout>
+
+                  <v-flex xs12 sm6 md3>
+                    <v-form v-model="valid">
+
+                      <v-text-field v-model="email" :rules="emailRules" label="E-mail" required></v-text-field>
+
+
+
+                    </v-form>
+
+                    <v-btn>ثبت در خبرنامه</v-btn>
+                    <br>
+                    <span><i class="fab fa-facebook"></i></span>
+                    <span><i class="fab fa-twitter"></i></span>
+                    <span><i class="fab fa-instagram"></i></span>
+                    <span><i class="fab fa-google-plus-g"></i></span>
+                    <span><i class="fas fa-rss-square"></i></span>
+
+                  </v-flex>
+                  <v-footer class="rtl">
+                    <v-card-text>تمامی حقوق این سایت نزد لورم اپسوم محفوظ می باشد و هر گونه کپی برداری از طرح قالب
+                      پیگرد قانونی به همراه دارد.</v-card-text>
+                    <v-card-text>قدرت گرفته از اینترنت اشیا و زنجیره بلوکی</v-card-text>
+                  </v-footer>
+
+
+                </v-card>
+              </v-flex>
+            </v-layout>
+          </v-flex>
+          <v-flex>
+            <v-card class="black--text" color="grey darken-3 darken-2">
+              <v-card-title primary-title="">
+                <v-navigation-drawer right dark v-model="drawer">
+                  <v-list dense fill-height>
+                    <v-list-tile @click="">
+                      <v-list-tile-action>
+                        <v-icon>dashboard</v-icon>
+                      </v-list-tile-action>
+                      <v-list-tile-content>
+                        <v-list-tile-title>داشبورد
+                        </v-list-tile-title>
+                      </v-list-tile-content>
+                    </v-list-tile>
+                    <v-list-tile @click="">
+                      <v-list-tile-action>
+                        <i class="material-icons">
+                          shopping_cart
+                        </i>
+                      </v-list-tile-action>
+                      <v-list-tile-content>
+                        <v-list-tile-title>فروشگاه</v-list-tile-title>
+                      </v-list-tile-content>
+                    </v-list-tile>
+
+
+                    <v-list-tile @click="">
+                      <v-list-tile-action>
+                        <i class="material-icons">
+                          equalizer
+                        </i>
+                      </v-list-tile-action>
+                      <v-list-tile-content>
+                        <v-list-tile-title>آمار</v-list-tile-title>
+                      </v-list-tile-content>
+                    </v-list-tile>
+
+                    <v-list-tile @click="">
+                      <v-list-tile-action>
+                        <i class="material-icons">
+                          photo_library
+                        </i>
+                      </v-list-tile-action>
+                      <v-list-tile-content>
+                        <v-list-tile-title>گالری</v-list-tile-title>
+                      </v-list-tile-content>
+                    </v-list-tile>
+
+                    <v-list-tile @click="">
+                      <v-list-tile-action>
+                        <i class="material-icons">
+                          credit_card
+                        </i>
+                      </v-list-tile-action>
+                      <v-list-tile-content>
+                        <v-list-tile-title>کارت ویزیت</v-list-tile-title>
+                      </v-list-tile-content>
+                    </v-list-tile>
+                  </v-list>
+
+
+                  <v-list-tile @click="">
+                    <v-list-tile-action>
+                      <i class="material-icons">
+                        view_list
+                      </i>
+                    </v-list-tile-action>
+                    <v-list-tile-content>
+                      <v-list-tile-title>لیست سفارشات</v-list-tile-title>
+                    </v-list-tile-content>
+                  </v-list-tile>
+
+
+                </v-navigation-drawer>
+
+                <v-toolbar-side-icon @click.stop="drawer = !drawer1">
+                  <v-img src="bgb-logo-white.png" align-center></v-img>
+
+                </v-toolbar-side-icon>
+              </v-card-title>
+            </v-card>
+          </v-flex>
         </v-layout>
-    </v-app>
-    </p>
-</div>
+      </v-container>
+    </v-layout>
+  </v-app>
+  </script>
 
-
-
-
-
-
-
-
-
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script>
-<script src="bgb.vue" ></script>
-
+  <script src="./bgb.js"></script>
 </body>
+
 </html>
 
 <!--
